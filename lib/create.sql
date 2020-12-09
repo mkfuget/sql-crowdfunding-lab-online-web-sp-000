@@ -6,5 +6,14 @@ create TABLE projects (
 )
 
 create TABLE users (
-  id INTEGER 
+  id INTEGER PRIMARY_KEY,
+  name TEXT,
+  age INTEGER
+)
+
+create TABLE pledges (
+  id INTEGER PRIMARY_KEY,
+  amount INTEGER,
+  user_id INTEGER,
+  project_id INTEGER
 )
