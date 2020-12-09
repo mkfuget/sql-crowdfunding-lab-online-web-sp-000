@@ -52,7 +52,6 @@ def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_ca
    FROM projects
    INNER JOIN pledges
    ON projects.id = pledges.project_id 
-   GROUP BY projects.category
    WHERE projects.category = \"music\"
   "
 end
